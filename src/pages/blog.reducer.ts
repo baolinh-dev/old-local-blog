@@ -1,4 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit'
+import { initialPostList } from 'constants/blog'
 import { Post } from 'types/blog.type'
 
 interface BlogState {
@@ -6,7 +7,7 @@ interface BlogState {
 }
 
 const initialState: BlogState = {
-  postList: []
+  postList: initialPostList
 }
 
 const blogReducer = createReducer(initialState, (builder) => {})
